@@ -2,7 +2,7 @@ services:
   dashboard:
     image: nginx:alpine
     ports:
-      - "80:80"
+      - "8180:80"
     volumes:
       - ./index.html:/usr/share/nginx/html/index.html:ro
     restart: unless-stopped
